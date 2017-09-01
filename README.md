@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -2166,4 +2166,4 @@ If you have ideas for more “How To” recipes that should be on this page, [le
 =======
 # udacity-react-booktracker
 Book tracking app
->>>>>>> 78ece7f3c35f11712c6fd35e90c982200f523a19
+
