@@ -2,6 +2,34 @@
   background: white;
 }
 
+/*App level css*/
+.consume-space {
+  flex: 1 1 auto;
+}
+
+.loading {
+  background: url(./images/loading.svg) center/50% no-repeat;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.msg {
+  height: 30px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.error-msg{
+  background: lightcoral;
+}
+
+.success-msg {
+  background: lightseagreen;
+}
+
 /*Header*/
 #app-header {
   width: 100%;
@@ -12,10 +40,134 @@
   height: 64px;
   align-items: center;
   background: black;
+  z-index: 1;
 }
 
 #app-logo {
   font-size: 1.5em;
   padding-left: 20px;
-  color: #00d8ff;
+  color: rgb(0, 216, 255);
+  text-decoration: none;
 }
+
+/*Search*/
+.search-button {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 216, 255, 0.9);
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+  left: -20px;
+  top: 30px;
+}
+
+.search-box {
+  display: flex;
+  border: 1px solid rgba(0, 216, 255, 0.2);
+  line-height: 40px;
+}
+
+.search-navigate-back {
+  width: 64px;
+  height: 64px;
+  background: url(./images/arrow-back.svg) no-repeat center/50%;
+}
+
+.search-input {
+  width: 100%;
+  height: 64px;
+  font-size: 1.5em;
+  border: none;
+  background: url(./images/search.svg) no-repeat right/40px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-result-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/*App Content*/
+#app-content {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: 67px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+
+/*Book shelves*/
+.book-shelf {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.book-shelf-title {
+  width: 100%;
+  padding-top: 20px;
+  border-bottom: 1px solid rgb(0, 216, 255);
+}
+
+.book-shelf-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.book {
+  margin: 20px;
+  width: 150px;
+  height: 200px;
+}
+
+.book-cover {
+  height: 200px;
+  width: 150px;
+}
+
+.book-meta {
+  background: rgba(0, 216, 255, 0.9);
+  height: 50px;
+  position: relative;
+  top: -50px;
+  padding: 5px;
+  font-size: 0.7em;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.book-rating-star {
+  width: 15px;
+  height: 15px;
+  filter: sepia(1) greyscale(1);
+}
+
+.book-details-button {
+  background: rgba(0, 216, 255, 0.2);
+  width: 15px;
+  height: 20px;
+  cursor: pointer;
+  color: lightcyan;
+  border-color: cyan;
+}
+
+
