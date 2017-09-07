@@ -21,7 +21,7 @@ class App extends React.Component {
 	/**
 	 * @description When user want to move book to different shelf
 	 * @param { stirng } shelf Shelf to which book need to be moved
-	 * @param { string } book Book that need to be moved 
+	 * @param { Object } book Book that need to be moved 
 	 */
 	onShelfChange = (shelf, book) => {
 		let books = this.state.books;
