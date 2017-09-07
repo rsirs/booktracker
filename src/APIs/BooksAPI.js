@@ -51,6 +51,5 @@ export const updateBookShelf = (id, s) => {
                    "content-type": "application/json"
         }
     };
-    console.log(toptions);
-    return fetch(`${url}/books/${id}`, options).then(res => console.log(res));
+    return fetch(`${url}/books/${id}`, options).then(res => res.json());
 }
