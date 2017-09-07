@@ -8,9 +8,20 @@ html {
   box-sizing: inherit;
 }
 
-body {
+h1, h2, h3, h4, h5, h6, li, ul, body, button {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: Roboto, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+select {
+  outline: none;
 }
 
