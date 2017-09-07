@@ -5,6 +5,10 @@ import rating from "./images/rating.svg";
 function BookItem(props){
     let book = props.book;
 
+    /**
+     * @description Request the parent component to update book shelf on selection
+     * @param { event } event selection event  
+     */
     var onSelectChange = (event) => {
         props.onSelectChange(event.target.value, book);
     }
