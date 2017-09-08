@@ -2,6 +2,7 @@
 # Udacity-React-Booktracker
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
 [Click Here](https://rsirs.github.io/udacity-react-booktracker/) to have a look at currently running app.
 
 ## Table of Contents
@@ -14,6 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Installation
 
 To work on the application
+
   * Clone the repository using `git clone https://github.com/rsirs/udacity-react-booktracker.git`
   * Install all the dependencies using `npm install`
   * To run the application at localhost:3000 use `npm start`
@@ -55,10 +57,10 @@ To deploy the application create a build of the application using `npm run build
 
 ### Github Pages
 
-To deploye to github pages 
-  1. Update package.json with homepage:https://<github-username>.github.io/<github-reponame>/
+To deploy to github pages 
+  1. Update package.json with "homepage":"https://`<github-username>`.github.io/`<github-reponame>`/"
   2. Update the *basepath* of BrowserRouter component with `<github-reponame>`
   3. Install gh-pages using `npm install -g gh-pages`
   4. Build the app using `npm run build`
-  5. Publish the application to github pages using `gh-pages -d buidl`
+  5. Publish the application to github pages using `gh-pages -d build`
 
