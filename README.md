@@ -15,8 +15,7 @@ Booktracker is an app used to track one's currently reading, want to read and re
 ## Installation
 
 To work on the application
-
-  * Clone the repository using `git clone https://github.com/rsirs/udacity-react-booktracker.git`
+  * Clone the repository using `git clone https://github.com/rsirs/udacity-react-booktracker.git`
   * Install all the dependencies using `npm install`
   * To run the application at localhost:3000 use `npm start`
   
