@@ -4,7 +4,6 @@ import rating from "./images/rating.svg";
 
 function BookItem(props){
     let book = props.book;
-
     /**
      * @description Request the parent component to update book shelf on selection
      * @param { event } event selection event  
@@ -29,7 +28,7 @@ function BookItem(props){
                 }   
                 <span>&nbsp;{book.ratingsCount && `( ${book.ratingsCount} )`}&nbsp;</span>
                 <div className="consume-space"></div>
-                <select className="book-details-button" defaultValue={book.shelf} onChange={onSelectChange}>
+                <select className="book-details-button" value={book.shelf} onChange={onSelectChange}>
                     <option value="moveTo" disabled={props.moveToDisabled}>move to..</option>
                     <option value="currentlyReading">currently reading</option>  
                     <option value="wantToRead">want to read</option>
