@@ -27,12 +27,27 @@ class SearchBooks extends React.Component {
      updateStateBySearchResults = (query)=> {
         this.setState({loading: true, error: false});
         BooksAPI.getBooksBySearch(query)
-                .then(books => this.setState({searchResultBooks: books.length? books : [], loading: false}))
+                .then(books => this.setState({searchResultBooks: books.length? this.updateShelfProps(books) : [], loading: false}))
                 .catch(error => this.setState(previousState=> ({searchResultBooks: previousState.searchResultBooks,
                                                                   error: true, 
                                                                   loading: false
                                                                 })
                 ));
+    }
+
+    /**
+     * @description Update the books from search result with shelf from main page books
+     * @param { Object } books Search result books
+     * @return { books } Returns modified modified search result books with shelf
+     */
+    updateShelfProps = (books) => {
+        let mainPageBooks = this.props.location.state.books;
+        let foundBook;
+         return books.map(b => {
+            foundBook = mainPageBooks.find(book => book.id === b.id)
+            b.shelf = foundBook?foundBook.shelf:"moveTo";
+            return b;
+        });
     }
 
     /**
