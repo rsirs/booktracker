@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import rating from "./images/rating.svg";
 
@@ -39,6 +40,12 @@ function BookItem(props){
             </div>
         </div>   
     );
+}
+
+BookItem.propTypes = {
+    book: PropTypes.object.isRequired,
+    moveToDisabled: PropTypes.bool,
+    onSelectChange: PropTypes.func.isRequired
 }
 
 export default BookItem;
