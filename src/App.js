@@ -52,7 +52,7 @@ class App extends React.Component {
 				<div id="app-header">
 					<Link to="/" id="app-logo">My Reads</Link>
 					<div className="consume-space"></div>
-					<Link to="/search" className="search-button">+</Link>
+					<Link to={{pathname:'/search', state: {books: this.state.books}}} className="search-button">+</Link>
 				</div>
 				<div id="app-content">
 					{
