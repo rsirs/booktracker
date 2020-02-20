@@ -27,7 +27,12 @@ jobs:
         node_version: ${{ matrix.node_version }} 
     - name: Run a multi-line script
       run: |
-         npm audit fix
          npm install
          npm run build --if-present
          npm run test --if-present
+         - name: Archive code coverage results
+    - name: Archive the build
+      uses: actions/upload-artifact@v1
+      with:
+          name: artifact_${{ env.GITHUB_SHA }}
+          path: build
