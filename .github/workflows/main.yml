@@ -33,5 +33,5 @@ jobs:
     - name: Archive the build
       uses: actions/upload-artifact@v1
       with:
-          name: artifact_${{ env.GITHUB_SHA }}
+          name: artifact_${{ github.sha }}
           path: build
