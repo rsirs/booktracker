@@ -1,4 +1,3 @@
-
 # Udacity-React-Booktracker
 
 Booktracker is an app used to track one's currently reading, want to read and read books. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
