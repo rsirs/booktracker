@@ -30,7 +30,6 @@ jobs:
          npm install
          npm run build --if-present
          npm run test --if-present
-         - name: Archive code coverage results
     - name: Archive the build
       uses: actions/upload-artifact@v1
       with:
