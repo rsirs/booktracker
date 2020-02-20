@@ -1,4 +1,4 @@
-name: CI
+name: Testnodejs CI
 
 on:
   pull_request:
@@ -10,7 +10,6 @@ on:
 
 jobs:
   build_job:
-
     runs-on: ubuntu-18.04
     timeout-minutes: 15
     strategy:
@@ -19,7 +18,6 @@ jobs:
     env:
       NODE_ENV: "develop"
       PORT: "8080"  
-
     steps:
     - uses: actions/checkout@v2
     - name: Using node verson ${{ matrix.node_version }}
@@ -29,5 +27,4 @@ jobs:
     - name: Run a multi-line script
       run: |
          npm install
-         npm run build
-         npm run test
+         npm run build --if-present
