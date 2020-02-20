@@ -27,6 +27,7 @@ jobs:
         node_version: ${{ matrix.node_version }} 
     - name: Run a multi-line script
       run: |
+         npm audit fix
          npm install
          npm run build --if-present
          npm run test --if-present
