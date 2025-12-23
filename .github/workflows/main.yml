@@ -1,8 +1,8 @@
-name: Testnodejs CI
+name: CI
 
 on:
   pull_request:
-    branches: 
+    branches:
       - master
       - develop
       - release
@@ -17,21 +17,21 @@ jobs:
         node_version: [10.x, 12.x]
     env:
       NODE_ENV: "develop"
-      PORT: "8080"  
+      PORT: "8080"
       CI: true
     steps:
-    - uses: actions/checkout@v2
-    - name: Using node verson ${{ matrix.node_version }}
-      uses: actions/setup-node@v1
-      with: 
-        node_version: ${{ matrix.node_version }} 
-    - name: Run a multi-line script
-      run: |
-         npm install
-         npm run build --if-present
-         npm run test --if-present
-    - name: Archive the build
-      uses: actions/upload-artifact@v1
-      with:
+      - uses: actions/checkout@v2
+      - name: Using node verson ${{ matrix.node_version }}
+        uses: actions/setup-node@v1
+        with:
+          node_version: ${{ matrix.node_version }}
+      - name: Run a multi-line script
+        run: |
+          npm install
+          npm run build --if-present
+          npm run test --if-present
+      - name: Archive the build
+        uses: actions/upload-artifact@v1
+        with:
           name: artifact_${{ github.sha }}
           path: build

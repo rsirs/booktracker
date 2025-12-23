@@ -6,11 +6,11 @@ import SearchBooks from "./SearchBooks";
 
 function AppRoutes(props) {
     return (
-        <BrowserRouter>
-             <switch>
-                 <Route  exact path='/' component={App} />
-                 <Route path="/search" component={SearchBooks} />
-             </switch>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <switch>
+                <Route exact path='/' component={App} />
+                <Route path="/search" component={SearchBooks} />
+            </switch>
         </BrowserRouter>
     )
 }

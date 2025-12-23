@@ -1,5 +1,5 @@
 {
-  "name": "udacity-react-booktracker",
+  "name": "react-booktracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,5 +14,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "volta": {
+    "node": "10.12.0"
+  },
+  "homepage": "https://rsirs.github.io/react-booktracker"
 }

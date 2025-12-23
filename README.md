@@ -1,9 +1,10 @@
-![](https://github.com/rsirs/udacity-react-booktracker/workflows/Testnodejs%20CI/badge.svg)
-# Udacity-React-Booktracker
+![](https://github.com/rsirs/react-booktracker/workflows/Testnodejs%20CI/badge.svg)
+
+# React-Booktracker
 
 Booktracker is an app used to track one's currently reading, want to read and read books. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-[Click Here](https://rsirs.github.io/udacity-react-booktracker/) to have a look at currently running app.
+[Click Here](https://rsirs.github.io/react-booktracker/) to have a look at currently running app.
 
 ## Table of Contents
 
@@ -15,18 +16,20 @@ Booktracker is an app used to track one's currently reading, want to read and re
 ## Installation
 
 To work on the application
-  * Clone the repository using `git clone https://github.com/rsirs/udacity-react-booktracker.git`
-  * Install all the dependencies using `npm install`
-  * To run the application at localhost:3000 use `npm start`
-  
+
+- Clone the repository using `git clone https://github.com/rsirs/react-booktracker.git`
+- Install all the dependencies using `npm install`
+- To run the application at localhost:3000 use `npm start`
+
 ## Folder Structure
 
 The project structure looks as shown below
+
 ```bash
 ├── README.md - This file.
 ├── package.json # Contains dependencies and project related configuration
 ├── public # Statics files are served from this folder
-│   ├── favicon.ico 
+│   ├── favicon.ico
 │   ├–– index.html # Index file that is served at the request
 |   ├–– manifest.json # Stores the meta about the project
 └── src
@@ -35,7 +38,7 @@ The project structure looks as shown below
     ├── AppRoutes.js # Contians all the routes for the app
     ├── BookShelf.js # Represent a book shelf
     ├── BookItem.js # Represnet a book
-    ├── SearchBooks.js # Seach page of the application 
+    ├── SearchBooks.js # Seach page of the application
     ├── index.css # Global styles.
     ├── index.js # Bootstrap of the application
     ├── utils # utilites scripts uses in the applicaiton.
@@ -47,19 +50,19 @@ The project structure looks as shown below
         ├── loading.svg
         ├── arrow-back.svg
         ├── search.svg
-        └── rating.svg     
+        └── rating.svg
 ```
 
 ## Deployment
 
-To deploy the application create a build of the application using `npm run build` command and then use this build to deploy on the servers. But before creating a build of the application update package.json with ***homepage*** propery and then update the ***BrowserRouter*** basepath property with `<basepath>`. Below is an example of deployement to github pages.
+To deploy the application create a build of the application using `npm run build` command and then use this build to deploy on the servers. But before creating a build of the application update package.json with **_homepage_** propery and then update the **_BrowserRouter_** basepath property with `<basepath>`. Below is an example of deployement to github pages.
 
 ### Github Pages
 
-To deploy to github pages 
-  1. Update package.json with "homepage":"https://`<github-username>`.github.io/`<github-reponame>`/"
-  2. Update the *basepath* of BrowserRouter component with `<github-reponame>`
-  3. Install gh-pages using `npm install -g gh-pages`
-  4. Build the app using `npm run build`
-  5. Publish the application to github pages using `gh-pages -d build`
+To deploy to github pages
 
+1. Update package.json with "homepage":"https://`<github-username>`.github.io/`<github-reponame>`/"
+2. Update the _basepath_ of BrowserRouter component with `<github-reponame>`
+3. Install gh-pages using `npm install -g gh-pages`
+4. Build the app using `npm run build`
+5. Publish the application to github pages using `gh-pages -d build`
