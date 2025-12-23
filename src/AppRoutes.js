@@ -6,7 +6,7 @@ import SearchBooks from "./SearchBooks";
 
 function AppRoutes(props) {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename={process.env.PUBLIC_URL ?? '/booktracker'}>
             <switch>
                 <Route exact path='/' component={App} />
                 <Route path="/search" component={SearchBooks} />
